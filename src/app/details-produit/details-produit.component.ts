@@ -9,7 +9,7 @@ import { ProduitService } from '../produit.service';
 })
 export class DetailsProduitComponent implements OnInit {
 
-  currentProduit = <HTMLInputElement><unknown>(null);
+  currentProduit: any | null;
   message = '';
 
   constructor( 

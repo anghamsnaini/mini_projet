@@ -1,4 +1,4 @@
-<div style="width: 400px; margin: auto;">
+ <div style="width: 400px; margin: auto;">
     <div *ngIf="currentProduit" class="edit-form">
       <h4>Produit</h4>
       <form>
@@ -22,14 +22,20 @@
             name="prix_unitaire"
           />
         </div>
+        <div class="form-group">
+          <label for="prix_unitaire">Qunatité</label>
+          <input
+            type="text"
+            class="form-control"
+            id="quantite"
+            [(ngModel)]="currentProduit.quantite"
+            name="quantite"
+          />
+        </div>
   
       </form>
   
-      <button>
-        Publish
-      </button>
-  
-      <button class="badge badge-danger mr-2" (click)="deleteProduit()">
+     <button class="badge badge-danger mr-2" (click)="deleteProduit()">
         Supprimer
       </button>
   

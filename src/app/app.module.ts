@@ -20,9 +20,10 @@ import { ListProduitComponent } from './list-produit/list-produit.component';
   ],
   imports: [
     BrowserModule,
+    HttpClientModule,
     AppRoutingModule,
-    FormsModule,
-    HttpClientModule
+    FormsModule
+    
   ],
   providers: [],
   bootstrap: [AppComponent]

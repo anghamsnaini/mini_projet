@@ -9,7 +9,7 @@ import { ProduitService } from '../produit.service';
 export class ListProduitComponent implements OnInit {
 
   produits: any;
-  currentProduit = null;
+  currentProduit: any | null;
   currentIndex = -1;
   nom = '';
 
